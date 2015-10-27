@@ -18,8 +18,8 @@ def getPoint():
 
 def init():
     global a, b, c, d, h, s
-	k = lambda x: [0] * x
-	a, b, c, d, h, s = [k(n+1) for x in range(6)]
+    k = lambda x: [0] * x
+    a, b, c, d, h, s = [k(n+1) for x in range(6)]
 
 def Hermite():
     init()
