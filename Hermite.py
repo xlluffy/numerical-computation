@@ -17,13 +17,9 @@ def getPoint():
         point.append((i, foo(i)))
 
 def init():
-    for i in range(n+1):
-        a.append(0)
-        b.append(0)
-        c.append(0)
-        d.append(0)
-        h.append(0)
-        s.append(0)
+    global a, b, c, d, h, s
+	k = lambda x: [0] * x
+	a, b, c, d, h, s = [k(n+1) for x in range(6)]
 
 def Hermite():
     init()
@@ -76,9 +72,12 @@ def drawAll():
     savefig("figure/Hermite.jpg")
     show()
 
+def printPoints(points):
+    for p in points:
+        print(p)
+
 if __name__ == "__main__":
     getPoint()
     Hermite()
-    for i in y:
-        print(i)
+    printPoints(y)
     drawAll()
