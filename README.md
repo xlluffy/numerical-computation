@@ -1,3 +1,4 @@
 # numerical-computation
-Code for numerical computation.
-Some codes and pictures about numerical computation coded by python, just a test of the function of Github.
+Code for numerical computation.<br />
+Some codes and pictures about numerical computation coded by python, just a test of the function of Github.<br />
+Python version: 3.4.3
